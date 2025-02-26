@@ -1,0 +1,91 @@
+﻿  Bitstream.cpp
+  CommonFunction.cpp
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\CommonFunction.cpp(111,27): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\CommonFunction.cpp(109,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  FileReader.cpp
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(42,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(136,13): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 4 拥有了类型“size_t”
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(136,13): message : 请考虑在格式字符串中使用“%zd”
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(139,35): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(151,90): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(155,32): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(175,28): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(184,40): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(188,21): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 4 拥有了类型“size_t”
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(188,21): message : 请考虑在格式字符串中使用“%zd”
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.cpp(193,43): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+  H264Cabac.cpp
+  H264CommonFunc.cpp
+  H264Golomb.cpp
+  H264HrdParameters.cpp
+  H264InterPrediction.cpp
+  H264MVCDVUIExt.cpp
+  H264MVCVUIExt.cpp
+  H264MacroBlock.cpp
+  H264NalUnit.cpp
+  H264PPS.cpp
+  H264Picture.cpp
+  H264PictureBase.cpp
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PictureBase.cpp(563,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PictureBase.cpp(655,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  H264PictureDeblockingFilterProcess.cpp
+  H264PicturesGOP.cpp
+  H264RefPicList.cpp
+  H264ResidualBlockCavlc.cpp
+  H264SEI.cpp
+  正在生成代码...
+  正在编译...
+  H264SPS.cpp
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(350,38): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(465,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(470,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(475,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(480,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(485,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(490,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(495,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.cpp(500,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  H264SPS3DavcExt.cpp
+  H264SPSExt.cpp
+  H264SPSMVCDExt.cpp
+  H264SPSMVCExt.cpp
+  H264SPSSVCExt.cpp
+  H264SVCVUIEx.cpp
+  H264SliceData.cpp
+  H264SliceHeader.cpp
+  H264SubsetSPS.cpp
+  H264VUI.cpp
+  H264VideoDecoder.cpp
+  正在生成代码...
+  h264_video_decoder_demo_static_vs2013.vcxproj -> D:\x264\h264_video_decoder_demo-master\build_static\x64\Debug\h264_video_decoder_demo_static_vs2013.lib
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\Bitstream.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\CommonFunction.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Cabac.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264CommonFunc.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Golomb.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264HrdParameters.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MacroBlock.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MVCDVUIExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MVCVUIExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264NalUnit.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Picture.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PictureBase.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PicturesGOP.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PPS.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264ResidualBlockCavlc.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SEI.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SliceData.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SliceHeader.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS3DavcExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSMVCDExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSMVCExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSSVCExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SubsetSPS.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SVCVUIExt.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VUI.h
+  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\version.h
+  已复制        30 个文件。
