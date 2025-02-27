@@ -89,9 +89,6 @@ public:
     int32_t             m_RefPicList0Length; //RefPicList0排序后的参考图像数目
     int32_t             m_RefPicList1Length; //RefPicList1排序后的参考图像数目
     int32_t             m_PicNumCnt; //图片递增计数
-    int32_t             yStride;
-    int32_t             uStride;
-    int32_t             vStride;
     
 public:
     CH264PictureBase();

@@ -176,7 +176,7 @@ int CMyStatic::H264VideoPlayerFrameCallback(CH264Picture *outPicture, void *user
 
     //player->m_outPicture = *outPicture;
     int32_t copyMbsDataFlag = 1;
-    auto mb = outPicture->m_picture_frame.m_mbs[20];
+    //auto mb = outPicture->m_picture_frame.m_mbs[20];
     ret = player->m_outPicture.m_picture_frame.copyData2(outPicture->m_picture_frame, copyMbsDataFlag);
 
     if (player->m_hWnd)

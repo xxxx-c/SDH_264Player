@@ -232,7 +232,7 @@ void CH264VideoDecoder_ffmpeg::ConvertAVFrameToCH264Picture(const AVFrame* avFra
             avFrame->width / 2);
     }
 
-    picture->m_picture_frame.m_mbs = avFrame->mb_2;
+    //picture->m_picture_frame.m_mbs = avFrame->mb_2;
     //·ÖÅäºê¿éÄÚ´æ
     //memcpy(m_mbs, src.m_mbs, sizeof(CH264MacroBlock) * PicSizeInMbs);
 

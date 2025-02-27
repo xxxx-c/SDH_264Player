@@ -158,7 +158,8 @@ unsigned long __stdcall CMyVideoPlayer::ThreadFunc_For_PlayProcess(void *lpParam
     //----------------------------------------
     int ret = 0;
 
-    ret = p->m_H264VideoDecoder.open(p->m_filename); //注意：该open函数，内部是一个循环，并且和CMyVideoPlayer::my_output_frame_callback()是同一个线程
+    ret = p->m_H264VideoDecoder.open_ffmpeg(p->m_filename); //调用decoder_ffmpeg
+   // ret = p->m_H264VideoDecoder.open(p->m_filename); //注意：该open函数，内部是一个循环，并且和CMyVideoPlayer::my_output_frame_callback()是同一个线程
     printf("p->m_H264VideoDecoder.open(url): ret=%d;\n", ret);
 
 end:

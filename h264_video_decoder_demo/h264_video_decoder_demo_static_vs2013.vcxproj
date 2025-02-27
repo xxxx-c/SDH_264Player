@@ -102,7 +102,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\x264\ffmpeg-7.1-full_build-shared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\x264\sdh_tool\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,6 +114,9 @@
 if not exist "%INTALL_DIR%" md "%INTALL_DIR%
 copy /y "$(ProjectDir)*h"  "%INTALL_DIR%"</Command>
     </PostBuildEvent>
+    <Lib>
+      <AdditionalLibraryDirectories>D:\x264\sdh_tool\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -219,6 +222,7 @@ copy /y "$(ProjectDir)*h"  "%INTALL_DIR%"</Command>
     <ClCompile Include="H264SPSSVCExt.cpp" />
     <ClCompile Include="H264SVCVUIEx.cpp" />
     <ClCompile Include="H264VideoDecoder.cpp" />
+    <ClCompile Include="H264VideoDecoder_ffmpeg.cpp" />
     <ClCompile Include="H264VUI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

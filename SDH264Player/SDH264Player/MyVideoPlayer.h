@@ -5,7 +5,7 @@
 
 
 #include "H264VideoDecoder.h" //H264视频解码器
-
+#include "H264VideoDecoder_ffmpeg.h"
 
 //typedef int(_stdcall* PlayCallback)(CH264Picture *outPicture, void *userData, int errorCode);
 typedef int (* PlayCallback)(CH264Picture *outPicture, void *userData, int errorCode);
@@ -16,7 +16,7 @@ class CMyVideoPlayer
 public:
     char m_filename[600];
 
-    CH264VideoDecoder m_H264VideoDecoder;
+    CH264VideoDecoder_ffmpeg m_H264VideoDecoder;
 
     int m_need_decoded_total_frames; //设置总共需要解码多少帧(默认为0，即无限制) 若按25fps计算，一天24小时总帧数 = 24 * 60 * 60 * 25 = 2160000（帧）
 
