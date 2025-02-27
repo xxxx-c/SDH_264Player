@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>D:\x264\h264_video_decoder_demo-master\264_file\cabac_noB.264  D:\x264\h264_video_decoder_demo-master\264_file\bmp</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>D:\x264\h264_video_decoder_demo-master\264_file\HeavyHand_1080p.no_B_frames.cabac.tff.h264  D:\x264\h264_video_decoder_demo-master\264_file\bmp</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

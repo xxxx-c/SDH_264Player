@@ -178,20 +178,19 @@ void CH264VideoDecoder_ffmpeg::ConvertAVFrameToCH264Picture(const AVFrame* avFra
         return;
     }
 
-    // 设置宽度和高度
-    picture->m_picture_frame.m_pic_coded_width_pixels = avFrame->width;
-    picture->m_picture_frame.m_pic_coded_height_pixels = avFrame->height;
 
-    // 计算宏块相关的字段
     picture->m_picture_frame.PicWidthInMbs = (avFrame->width + 15) / 16;
     picture->m_picture_frame.PicHeightInMbs = (avFrame->height + 15) / 16;
     picture->m_picture_frame.PicSizeInMbs = picture->m_picture_frame.PicWidthInMbs * picture->m_picture_frame.PicHeightInMbs;
 
-    // 解码后的宽度和高度（以样本为单位）
+    // 解码后的宽高
     picture->m_picture_frame.PicWidthInSamplesL = picture->m_picture_frame.PicWidthInMbs * 16;
+    picture->m_picture_frame.PicWidthInSamplesC = picture->m_picture_frame.PicWidthInMbs * 8;
     picture->m_picture_frame.PicHeightInSamplesL = picture->m_picture_frame.PicHeightInMbs * 16;
-    picture->m_picture_frame.PicWidthInSamplesC = picture->m_picture_frame.PicWidthInSamplesL / 2;
-    picture->m_picture_frame.PicHeightInSamplesC = picture->m_picture_frame.PicHeightInSamplesL / 2;
+    picture->m_picture_frame.PicHeightInSamplesC = picture->m_picture_frame.PicHeightInMbs * 8;
+
+    picture->m_picture_frame.m_pic_coded_width_pixels = picture->m_picture_frame.PicWidthInMbs * 16;
+    picture->m_picture_frame.m_pic_coded_height_pixels = picture->m_picture_frame.PicHeightInMbs * 16;
 
     // 计算 YUV 数据的大小
     int sizeY = picture->m_picture_frame.PicWidthInSamplesL * picture->m_picture_frame.PicHeightInSamplesL;
@@ -207,38 +206,39 @@ void CH264VideoDecoder_ffmpeg::ConvertAVFrameToCH264Picture(const AVFrame* avFra
     }
     memset(pic_buff, 0, sizeof(uint8_t) * totalSize);
 
-    // 设置 YUV 缓冲区指针
+
     picture->m_picture_frame.m_pic_buff_luma = pic_buff;
     picture->m_picture_frame.m_pic_buff_cb = pic_buff + sizeY;
     picture->m_picture_frame.m_pic_buff_cr = pic_buff + sizeY + sizeU;
 
-    // 复制 Y 分量（考虑行对齐）
+    // 复制 Y 分量
     for (int y = 0; y < avFrame->height; y++) {
         memcpy(picture->m_picture_frame.m_pic_buff_luma + y * avFrame->width,
             avFrame->data[0] + y * avFrame->linesize[0],
             avFrame->width);
     }
 
-    // 复制 U 分量（考虑行对齐）
+    // 复制 U 分量
     for (int y = 0; y < avFrame->height / 2; y++) {
         memcpy(picture->m_picture_frame.m_pic_buff_cb + y * (avFrame->width / 2),
             avFrame->data[1] + y * avFrame->linesize[1],
             avFrame->width / 2);
     }
 
-    // 复制 V 分量（考虑行对齐）
+    // 复制 V 分量
     for (int y = 0; y < avFrame->height / 2; y++) {
         memcpy(picture->m_picture_frame.m_pic_buff_cr + y * (avFrame->width / 2),
             avFrame->data[2] + y * avFrame->linesize[2],
             avFrame->width / 2);
     }
 
-    // 设置 stride
-    picture->m_picture_frame.yStride = (int32_t)avFrame->linesize[0];
-    picture->m_picture_frame.uStride = (int32_t)avFrame->linesize[1];
-    picture->m_picture_frame.vStride = (int32_t)avFrame->linesize[2];
+    picture->m_picture_frame.m_mbs = avFrame->mb_2;
+    //分配宏块内存
+    //memcpy(m_mbs, src.m_mbs, sizeof(CH264MacroBlock) * PicSizeInMbs);
 
-    // 设置时序相关字段
+
+
+
     picture->m_picture_frame.PicOrderCnt = avFrame->pts; // 假设 PTS 作为 PicOrderCnt
     picture->m_picture_frame.FrameNum = avFrame->pts;    // 短期参考帧
 

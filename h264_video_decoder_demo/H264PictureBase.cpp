@@ -137,18 +137,18 @@ int CH264PictureBase::init(CH264SliceHeader &slice_header)
     MbHeightC = slice_header.m_sps.MbHeightC;
     Chroma_Format = slice_header.m_sps.Chroma_Format;
 
-    PicWidthInMbs = slice_header.m_sps.PicWidthInMbs;
-    PicHeightInMbs = slice_header.PicHeightInMbs;
-    PicSizeInMbs = PicWidthInMbs * PicHeightInMbs;
+    PicWidthInMbs = slice_header.m_sps.PicWidthInMbs;  //120
+    PicHeightInMbs = slice_header.PicHeightInMbs;        //68
+    PicSizeInMbs = PicWidthInMbs * PicHeightInMbs;     //8160
     
-    PicWidthInSamplesL = PicWidthInMbs * 16;
-    PicWidthInSamplesC = PicWidthInMbs * MbWidthC;
+    PicWidthInSamplesL = PicWidthInMbs * 16;           //1920
+    PicWidthInSamplesC = PicWidthInMbs * MbWidthC;     //960
     
-    PicHeightInSamplesL = PicHeightInMbs * 16;
-    PicHeightInSamplesC = PicHeightInMbs * MbHeightC;
+    PicHeightInSamplesL = PicHeightInMbs * 16;        //1088
+    PicHeightInSamplesC = PicHeightInMbs * MbHeightC; //544
 
-    m_pic_coded_width_pixels = PicWidthInMbs * MbWidthL;
-    m_pic_coded_height_pixels = PicHeightInMbs * MbHeightL;
+    m_pic_coded_width_pixels = PicWidthInMbs * MbWidthL; //1920
+    m_pic_coded_height_pixels = PicHeightInMbs * MbHeightL; //1088
     
     //-----------------------
     if (m_is_malloc_mem_by_myself == 1)
@@ -170,7 +170,7 @@ int CH264PictureBase::init(CH264SliceHeader &slice_header)
 
         int totalSzie = sizeY + sizeU + sizeV;
         
-        uint8_t * pic_buff = (uint8_t *)my_malloc(sizeof(uint8_t) * totalSzie); //Y,U,V 这3个通道数据存储在一块连续的内存中
+        uint8_t * pic_buff = (uint8_t *)my_malloc(sizeof(uint8_t) * totalSzie); 
         RETURN_IF_FAILED(pic_buff == NULL, -1);
         memset(pic_buff, 0, sizeof(uint8_t) * totalSzie);
 

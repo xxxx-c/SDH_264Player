@@ -81,13 +81,13 @@ int main(int argc, char *argv[])
 
     //------------------------
 
-    CH264VideoDecoder_ffmpeg vd;
-    ret = vd.set_output_frame_callback_functuin(my_output_frame_callback, userData); //设置回调函数
-    ret = vd.open_ffmpeg(url);
+    //CH264VideoDecoder_ffmpeg vd;
+    //ret = vd.set_output_frame_callback_functuin(my_output_frame_callback, userData); //设置回调函数
+    //ret = vd.open_ffmpeg(url);
 
-    //CH264VideoDecoder vd;
-    //ret= vd.set_output_frame_callback_functuin(my_output_frame_callback, userData); //设置回调函数
-    //ret = vd.open(url);
+    CH264VideoDecoder vd;
+    ret= vd.set_output_frame_callback_functuin(my_output_frame_callback, userData); //设置回调函数
+    ret = vd.open(url);
 
     printf("vd.open(): url=%s; ret=%d;\n", url, ret);
 
