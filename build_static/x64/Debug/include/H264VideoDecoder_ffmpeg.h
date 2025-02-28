@@ -57,6 +57,7 @@ public:
 
     int set_output_frame_callback_functuin(output_frame_callback output_frame_callback, void* userData);
 
+    int open(const char* url);
     int open_ffmpeg(const char* url);
     int do_callback(CH264Picture* picture_current, CH264PicturesGOP* pictures_gop, int32_t is_need_flush);
 

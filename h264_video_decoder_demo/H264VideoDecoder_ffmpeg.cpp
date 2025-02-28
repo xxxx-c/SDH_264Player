@@ -235,6 +235,9 @@ void CH264VideoDecoder_ffmpeg::ConvertAVFrameToCH264Picture(const AVFrame* avFra
     //picture->m_picture_frame.m_mbs = avFrame->mb_2;
     //分配宏块内存
     //memcpy(m_mbs, src.m_mbs, sizeof(CH264MacroBlock) * PicSizeInMbs);
+    int mb_sum = picture->m_picture_frame.PicSizeInMbs;
+    picture->m_picture_frame.m_mbs = (CH264MacroBlock*)malloc(mb_sum * sizeof(CH264MacroBlock));
+
 
 
 
@@ -305,6 +308,8 @@ int CH264VideoDecoder_ffmpeg::do_callback(CH264Picture* picture_current, CH264Pi
     {
         if (m_output_frame_callback != NULL)
         {
+            //CH264Picture* copyPicture = new CH264Picture();
+            //*copyPicture = *outPicture;
             ret = m_output_frame_callback(outPicture, m_userData, errorCode); //当找到可输出的帧时，主动通知外部用户
             if (ret != 0)
             {

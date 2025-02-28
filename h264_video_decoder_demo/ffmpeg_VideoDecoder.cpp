@@ -236,7 +236,8 @@ void CH264VideoDecoder_ffmpeg::ConvertAVFrameToCH264Picture(const AVFrame* avFra
     //分配宏块内存
     //memcpy(m_mbs, src.m_mbs, sizeof(CH264MacroBlock) * PicSizeInMbs);
 
-
+    int mb_sum = picture->m_picture_frame.PicSizeInMbs;
+    picture->m_picture_frame.m_mbs = (CH264MacroBlock*)malloc(mb_sum * sizeof(CH264MacroBlock));
 
 
     picture->m_picture_frame.PicOrderCnt = avFrame->pts; // 假设 PTS 作为 PicOrderCnt
