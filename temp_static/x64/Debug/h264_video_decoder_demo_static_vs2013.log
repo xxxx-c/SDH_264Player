@@ -1,7 +1,4 @@
-﻿  H264VideoDecoder.cpp
-D:\x264\sdh_tool\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\x264\sdh_tool\include\libavutil\frame.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  H264VideoDecoder_ffmpeg.cpp
+﻿  H264VideoDecoder_ffmpeg.cpp
 D:\x264\sdh_tool\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 D:\x264\sdh_tool\include\libavutil\frame.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 D:\x264\sdh_tool\include\libavcodec\avcodec.h(337,1): warning C4005: “AV_CODEC_FLAG_GLOBAL_HEADER”: 宏重定义
@@ -18,7 +15,6 @@ D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_
 D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(113,5): warning C4996: 'av_init_packet': 被声明为已否决
 D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(245,51): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
 D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(246,48): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
-  正在生成代码...
   h264_video_decoder_demo_static_vs2013.vcxproj -> D:\x264\h264_video_decoder_demo-master\build_static\x64\Debug\h264_video_decoder_demo_static_vs2013.lib
   D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\Bitstream.h
   D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\CommonFunction.h

@@ -185,7 +185,6 @@
   <ItemGroup>
     <ClCompile Include="Bitstream.cpp" />
     <ClCompile Include="CommonFunction.cpp" />
-    <ClCompile Include="ffmpeg_VideoDecoder.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="H264Cabac.cpp" />
     <ClCompile Include="H264CommonFunc.cpp" />
@@ -215,6 +214,7 @@
     <ClCompile Include="H264SPSSVCExt.cpp" />
     <ClCompile Include="H264SVCVUIEx.cpp" />
     <ClCompile Include="H264VideoDecoder.cpp" />
+    <ClCompile Include="H264VideoDecoder_ffmpeg.cpp" />
     <ClCompile Include="H264VUI.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

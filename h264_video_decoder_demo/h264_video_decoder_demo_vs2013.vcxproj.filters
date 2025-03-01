@@ -212,7 +212,7 @@
     <ClCompile Include="H264Cabac.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ffmpeg_VideoDecoder.cpp">
+    <ClCompile Include="H264VideoDecoder_ffmpeg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

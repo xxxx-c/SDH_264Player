@@ -23,10 +23,10 @@ int my_output_frame_callback(CH264Picture *outPicture, void *userData, int error
         char * outDir = (char *)userData;
 
         char filename[600] = {0};
-        sprintf(filename, "%s/out_%dx%d.%d.bmp", outDir, outPicture->m_picture_frame.PicWidthInSamplesL, 
+        sprintf(filename, "%s/out_%dx%d.%d.bmp", outDir, outPicture->m_picture_frame.PicWidthInSamplesL,
             outPicture->m_picture_frame.PicHeightInSamplesL, s_PicNumCnt); //不要用outPicture->m_picture_frame.m_PicNumCnt的值，因为对于含有B帧的视频来说，此值是解码顺序，不是帧显示顺序
-        
-        printf("my_output_frame_callback(): m_PicNumCnt=%d(%s); PicOrderCnt=%d; filename=%s;\n", outPicture->m_picture_frame.m_PicNumCnt, 
+
+        printf("my_output_frame_callback(): m_PicNumCnt=%d(%s); PicOrderCnt=%d; filename=%s;\n", outPicture->m_picture_frame.m_PicNumCnt,
             H264_SLIECE_TYPE_TO_STR(outPicture->m_picture_frame.m_h264_slice_header.slice_type), outPicture->m_picture_frame.PicOrderCnt, filename);
 
         ret = outPicture->m_picture_frame.saveToBmpFile(filename);
