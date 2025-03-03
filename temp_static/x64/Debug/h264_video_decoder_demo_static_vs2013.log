@@ -1,54 +1,61 @@
-﻿  H264SEI.cpp
-  H264VideoDecoder_ffmpeg.cpp
-D:\x264\sdh_tool\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\x264\sdh_tool\include\libavutil\frame.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\x264\sdh_tool\include\libavcodec\avcodec.h(337,1): warning C4005: “AV_CODEC_FLAG_GLOBAL_HEADER”: 宏重定义
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(1): message : 参见“AV_CODEC_FLAG_GLOBAL_HEADER”的前一个定义
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.h(11,1): warning C4005: “AV_CODEC_FLAG_GLOBAL_HEADER”: 宏重定义
-D:\x264\sdh_tool\include\libavcodec\avcodec.h(337): message : 参见“AV_CODEC_FLAG_GLOBAL_HEADER”的前一个定义
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(63,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(63,9): warning C4313: “printf”: 格式字符串中的“%s”与“int”类型的参数 4 冲突
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(70,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(70,9): warning C4313: “printf”: 格式字符串中的“%s”与“int”类型的参数 4 冲突
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(102,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(102,9): warning C4313: “printf”: 格式字符串中的“%s”与“int”类型的参数 4 冲突
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(136,49): warning C4996: 'AVFrame::key_frame': 被声明为已否决
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(113,5): warning C4996: 'av_init_packet': 被声明为已否决
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(242,51): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
-D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(243,48): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
-  H264VUI.cpp
-  正在生成代码...
-  h264_video_decoder_demo_static_vs2013.vcxproj -> D:\x264\h264_video_decoder_demo-master\build_static\x64\Debug\h264_video_decoder_demo_static_vs2013.lib
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\Bitstream.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\CommonFunction.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\FileReader.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Cabac.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264CommonFunc.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\h264dec.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Golomb.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264HrdParameters.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MacroBlock.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MVCDVUIExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264MVCVUIExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264NalUnit.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264Picture.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PictureBase.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PicturesGOP.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264PPS.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264ResidualBlockCavlc.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SEI.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SliceData.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SliceHeader.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPS3DavcExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSMVCDExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSMVCExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SPSSVCExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SubsetSPS.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264SVCVUIExt.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\H264VUI.h
-  D:\x264\h264_video_decoder_demo-master\h264_video_decoder_demo\version.h
+﻿  H264VideoDecoder_ffmpeg.cpp
+D:\msys2\home\admin\FFmpeg-release-6.1-mbdll\shared\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“H264VideoDecoder_ffmpeg.cpp”)
+  
+D:\msys2\home\admin\FFmpeg-release-6.1-mbdll\shared\include\libavutil\frame.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“H264VideoDecoder_ffmpeg.cpp”)
+  
+D:\msys2\home\admin\FFmpeg-release-6.1-mbdll\shared\include\libavcodec\avcodec.h(337,9): warning C4005: “AV_CODEC_FLAG_GLOBAL_HEADER”: 宏重定义
+  (编译源文件“H264VideoDecoder_ffmpeg.cpp”)
+      C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(1,9):
+      参见“AV_CODEC_FLAG_GLOBAL_HEADER”的前一个定义
+  
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.h(11,9): warning C4005: “AV_CODEC_FLAG_GLOBAL_HEADER”: 宏重定义
+  (编译源文件“H264VideoDecoder_ffmpeg.cpp”)
+      D:\msys2\home\admin\FFmpeg-release-6.1-mbdll\shared\include\libavcodec\avcodec.h(337,9):
+      参见“AV_CODEC_FLAG_GLOBAL_HEADER”的前一个定义
+  
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(63,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(63,9): warning C4313: "printf": 格式字符串中的 "%s" 与类型为 "int" 的参数 4 冲突
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(70,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(70,9): warning C4313: "printf": 格式字符串中的 "%s" 与类型为 "int" 的参数 4 冲突
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(102,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 4 拥有了类型“int”
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(102,9): warning C4313: "printf": 格式字符串中的 "%s" 与类型为 "int" 的参数 4 冲突
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(136,49): warning C4996: 'AVFrame::key_frame': 被声明为已否决
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(113,5): warning C4996: 'av_init_packet': 被声明为已否决
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(263,51): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
+C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.cpp(264,48): warning C4244: “=”: 从“const int64_t”转换到“int32_t”，可能丢失数据
+  h264_video_decoder_demo_static_vs2013.vcxproj -> C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\build_static\x64\Debug\h264_video_decoder_demo_static_vs2013.lib
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\Bitstream.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\CommonFunction.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\FileReader.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264Cabac.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264CommonFunc.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\h264dec.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264Golomb.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264HrdParameters.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264MacroBlock.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264MVCDVUIExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264MVCVUIExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264NalUnit.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264Picture.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264PictureBase.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264PicturesGOP.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264PPS.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264ResidualBlockCavlc.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SEI.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SliceData.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SliceHeader.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPS.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPS3DavcExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPSExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPSMVCDExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPSMVCExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SPSSVCExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SubsetSPS.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264SVCVUIExt.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VideoDecoder_ffmpeg.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\H264VUI.h
+  C:\Users\a2511\Desktop\SDH_264Player-ffmpeg_6.1\h264_video_decoder_demo\version.h
   已复制        32 个文件。
